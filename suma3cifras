@@ -3,8 +3,17 @@ public class Main {
     int resultado = 0;
     resultado = suma (a:5 , b:10 , c:20);
     System.out.println (resultado);
+    Coche miCoche = new Coche();
+    miCoche.IncrementoPuerta();
+    miCoche.IncrementoPuerta();
+    System.out.println (miCoche.puertas);
   }
   public static int suma (int a , int b , int c) {
     return a+b+c;
+  }
+  class Coche {
+    public staic void IncrementoPuerta(){
+      this.puertas ++;
+    }
   }
 }
